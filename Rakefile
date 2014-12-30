@@ -1,2 +1,4 @@
-require './cl_scraper'
+# Rakefile
+
+require './app'
 require 'sinatra/activerecord/rake'

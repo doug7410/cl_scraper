@@ -1,2 +1,4 @@
-require './cl_scraper'
+# config.ru
+
+require './app'
 run Sinatra::Application
