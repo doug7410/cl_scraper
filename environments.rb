@@ -1,5 +1,5 @@
 configure :development do
-  set :database, {adapter: "sqlite3", database: "cl_scraper.sqlite3"}
+  set :database, {adapter: "sqlite3", database: "db/cl_scraper.sqlite3"}
   set :show_exceptions, true
 end
 

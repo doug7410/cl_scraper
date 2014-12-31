@@ -1,9 +1,10 @@
-# app.rb
-
 require 'sinatra'
 require 'sinatra/activerecord'
 require './environments'
+require './models/post'
 
-
-class Post < ActiveRecord::Base
+get "/" do
+  @posts = Post.order("created_at DESC")
+  @title = "Welcome."
+  haml :"posts/index"
 end

@@ -17,6 +17,7 @@ GEM
     arel (6.0.0)
     bond (0.5.1)
     builder (3.2.2)
+    haml (3.1.7)
     i18n (0.7.0)
     json (1.8.1)
     minitest (5.5.0)
@@ -35,6 +36,9 @@ GEM
       rack (>= 1.0)
       rack-test (~> 0.6.2)
       ripl (>= 0.7.0)
+    sass (3.2.1)
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -62,8 +66,11 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  haml (= 3.1.7)
   pg
   rake
+  sass (= 3.2.1)
+  shotgun (= 0.9)
   sinatra
   sinatra-activerecord
   sinatra-flash

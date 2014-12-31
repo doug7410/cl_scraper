@@ -1,0 +1,7 @@
+%ul
+  - @posts.each do |post|
+    %li
+      %h4
+        %a{:href => "/posts/#{post.link}"}= post.title
+      %p
+        Created: #{post.created_at}
